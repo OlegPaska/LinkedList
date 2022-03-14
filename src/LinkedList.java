@@ -115,4 +115,19 @@ public class LinkedList {
         return false;
     }
 
+    public int indexOf(int v){
+        Node current = head;
+        Node previous = null;
+        int counter = 0;
+        while (current != null) {
+            previous = current;
+            current = current.getNext();
+            if (previous.getValue() == v){
+                return counter;
+            }
+            counter++;
+        }
+        return -1;
+    }
+
 }

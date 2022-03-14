@@ -18,6 +18,7 @@ class Main {
         System.out.println(myList.getLast());
         myList.set(2, 888);
         System.out.println(myList.get(2));
+        System.out.printf("ASDFASDFASDF      "+myList.indexOf(888));
         //myList.clear();
         myList.head.display();
         myList.head.getNext().display();
@@ -27,6 +28,16 @@ class Main {
         System.out.println("size");
         System.out.println(myList.size());
         myList.head.display();
+
+
+        System.out.println("ljkdfgsjksdfgl;jkasdfgjkl;sdfgjkl;sdfglkdfskldfgljkdfgljkasdf");
+
+        IBList IB = new IBList(new int[]{0,1,2,3,4,5,6});
+        IB.resetNext();
+        IB.addItem(2);
+
+        IB.resetNext();
+        System.out.println(IB.getNext());
 
     }
 }
